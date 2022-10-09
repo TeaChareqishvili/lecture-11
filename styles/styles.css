@@ -8,22 +8,25 @@
 
 header{
     background-color: #0020F4;
+   
 }
 .container{
     max-width:1450px;
     width:80%;
     margin: auto;
+   
 }
 
 .flex-div{
     display:flex;
     justify-content: space-between;
     align-items: center;
+   
     
 }
 .logo, .nav-div{
-  margin-top:30px;
-  margin-bottom:150px;
+  margin-top:60px;
+  margin-bottom:300px;
 }
 
 .flex-ul{
@@ -50,14 +53,58 @@ header{
 
 }
 
+.main-image{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+ 
+.image{
+    width:100%;
+    border-radius:15px;
+    margin-top:-10%;
+}
 
+h1{
+    font-family: Helvetica;
+    font-size: 28px;
+    font-weight: bold;
+    color:#171717;
+    margin-top:30px;
+    margin-bottom:60px;
+}
 
+.small-pics{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:60px;
+  
+    
+   
+}
 
+.text>p{
+    padding-bottom:18px;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    color:#171717;
+}
 
+.add-info{
+    background-color:#0020F4;
+    padding:18px 57px 18px 57px;
+    border-radius:28px;
+    margin-top:58px;
+    margin-bottom:180px;
+}
 
-
-
-
+.button{
+    display:flex;
+    justify-content: center;
+}
 
 
 
@@ -66,11 +113,10 @@ header{
 
 
 @media  (max-width:1024px){ 
-    .logo{
-       margin-top:40px;  
-       margin-left:auto;
-       margin-right:auto;
-      
+    
+    .flex-div{
+        justify-content: center;
+       
     }
     nav{
         display:none;
@@ -78,4 +124,31 @@ header{
      header{
         border-radius:0 0 20px 20px;
      }
+ 
+    h1{
+        font-size:18px;
+    }
+     
+     .small-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap:10px;
+       
+    } 
+    .box{
+        width:162px;
+        height:90px;
+       
+    }
+   .box1{
+    display:none;
+   }
+
+  
+   .text>p{
+    font-size:14px;
+   }
+   .ptext{
+    display:none;
+   }
 }
